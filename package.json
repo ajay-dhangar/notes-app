@@ -2,6 +2,7 @@
   "name": "notes-app",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://ajay-dhangar.github.io/notes-app",
   "description": "A simple notes app built with React and Firebase",
   "keywords": [
     "react",
@@ -21,11 +22,14 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "*",
+    "gh-pages": "^6.1.1",
     "vite": "latest"
   },
   "scripts": {
     "start": "vite",
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
